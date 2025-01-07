@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Leerräume</title>
+</head>
+<body>
+    <main>
+        <section class="section-img-posts">
+          <div 
+            class="container-img-posts scrollable" 
+            data-images='{{ images | jsonify }}'>
+          </div>
+
+            <div class="container-btn">
+                <button class="btn btn-left">←</button>
+                <button class="btn btn-right">→</button>
+            </div>
+        </section>
+        
+        <div class="pre-title"></div>
+        <section class="section-text-posts">
+            <h1 class="text-subpage title-subpage">{{ title }}</h1>
+            <div class="container-text-posts">
+                <h2 class="text-subpage details-text-subpage">{{ plz }} {{ ort }}</h2>
+                <p class="text-subpage details-text-subpage description-text-subpage">{{ description }}</p>
+            </div>
+        </section> 
+    </main>
+
+    <script src="/assets/js/posts.js"></script>
+
+
+
+
+</body>
+</html>
