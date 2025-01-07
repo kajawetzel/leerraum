@@ -21,6 +21,5 @@ collections:
         name: "images"
         widget: "list"
         field:
-        label: "Bilder"
-        name: "image"
-        widget: "image"
+          name: "image"
+          widget: "image"
