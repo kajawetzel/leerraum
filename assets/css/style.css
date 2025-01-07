@@ -10,15 +10,6 @@ html {
   scroll-behavior: smooth;
   font-size: 16px;
 }
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-a{
-  text-decoration: none;
-}
 
 main {
   overflow: hidden;
@@ -26,6 +17,11 @@ main {
   width: 100vw;
   height: 100vh;
 }
+
+a{
+  text-decoration: none;
+}
+
 
 h1, h2 {
   font-family: Font1;
@@ -92,7 +88,7 @@ img:hover {
     transform: translateX(0);
   }
   100% {
-    transform: translateX(-100%); /* Move everything to the left */
+    transform: translateX(-100%);
   }
 }
 
