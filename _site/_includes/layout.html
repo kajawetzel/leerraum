@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/fonts.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Leerräume</title>
+</head>
+<body>
+    <main> 
+        <section class="section-gallery">
+            <p class="plz">PLZ</p>
+            <div class="carousel">
+                {% for post in collections.posts %}
+                <div class="container-img">
+                    {% if post.data.image %}
+                    <a class="img-link" href="{{ post.url }}">
+                        <!--<div class="img-test"></div>-->
+                        <img class="carousel-item" src="{{ post.data.preview-image }}" alt="{{ post.data.title }}">
+                
+                    <!--
+                        <div class="sides">
+                        <div class="side side-left">
+                            <img class="side-img" src="{{ post.data.image }}" alt="{{ post.data.title }}">
+                        </div>
+                    </div>
+                    -->
+        
+                    <p class="text-on-img invisible">{{ post.data.plz }}</p>
+                    {% endif %}
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        
+        <!--
+        <input type="checkbox" id="toggle-section" />
+        <label for="toggle-section">close/open</label>
+        -->
+        
+        <section class="section-text-on-top" id="section-to-toggle">
+            <div class="menu">
+                <h1>Leerräume</h1>
+                <h2>Einsenden</h2>
+                <h2>About</h2>
+            </div>
+           <!-- <p class="text-description">
+                Eine Plattform, die potentiellen Orte für Ausstellungen, Veranstaltungen und kreative Projekte im ländlichen Raum sichtbarmacht. <br>
+                Eine Plattform, die leeren Orte mit wenig Kulturangebot und Menschen, die auf der Suche nach Freiräumen sind, zusammenbringt.
+            </p>
+            <p class="arrow">⟷</p>
+            <div class="container-explain">
+                <div class="item-text-explain item-text-explain-1">
+                    <p class="heading-text-explain">dokumentieren</p>
+                    <p class="text-explain">
+                        Fotografiere Lerräume auf dem Land und lade das Bild hoch.
+                        Gib die Adresse und evtl. Kontaktmöglichkeiten oder Tipps an, wie man an den Ort als Veranstaltungstätte rankommen könnte.
+                    </p>
+                    <a href="subpages/form-upload/index.html" class="text-explain-link-form">hochladen</a>
+                </div>
+                <div class="item-text-explain item-text-explain-2">
+                    <p class="heading-text-explain">finden</p>
+                    <p class="text-explain">
+                        Finde Inspiration für deinen nächsten Veranstaltungsraum. Scrolle durch die hochgeladenen Leerstände. 
+                        Wenn du dich von einem Ort inspiriert fühlst, kannst du mit Hilfe der Kontaktmöglichkeiten oder den Tipps versuchen Kontakt zur Verwaltung des Raumes aufzunehmen.  
+                    </p>
+                </div>   
+            </div>
+            -->
+        </section>
+        
+        <script src="assets/js/main.js"></script>
+    </main>
+</body>
+</html>
