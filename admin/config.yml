@@ -17,4 +17,10 @@ collections:
       - { label: "Beschreibung", name: "description", widget: "markdown" }
       - { label: "Postleitzahl", name: "plz", widget: "string" }
       - { label: "Vorschaubild", name: "preview-image", widget: "image" }
-      - { label: "Bilder Detailansicht", name: "images", widget: "list" }
+      - label: "Bilder Detailansicht"
+        name: "images"
+        widget: "list"
+        field:
+        label: "Bilder"
+        name: "image"
+        widget: "image"
